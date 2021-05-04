@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">L03 - Bill Please</string>
+    <string name="Amount">Amount</string>
+    <string name="People">Num of Pax</string>
+    <string name="NoSVS">NO SVS</string>
+    <string name="GST">GST</string>
+    <string name="Discount">Discount(%)</string>
+    <string name="Payment_type1">Cash</string>
+    <string name="Payment_type2">PayNow</string>
+    <string name="Split">SPLIT</string>
+    <string name="Clear">RESET</string>
+    <string name="AmountDisplay">Bill Cost</string>
+    <string name="PeopleText">Number of diners</string>
+    <string name="DiscountDisplay">How much discount</string>
+    <string name="TotalCost">Total Bill:</string>
+    <string name="CostPerPerson">Each pays:$</string>
+</resources>
