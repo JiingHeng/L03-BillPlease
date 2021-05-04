@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        android:digits="1234567890"
         android:hint="@string/AmountDisplay"/>
 
     <TextView
@@ -43,6 +44,7 @@
         android:orientation="horizontal">
 
         <RadioGroup
+            android:id="@+id/rgMode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -55,7 +57,10 @@
                 android:layout_weight="1"
                 android:checked="true"
                 android:layout_marginRight="5dp"
-                android:text="@string/NoSVS" />
+                android:textOn="@string/SVS"
+                android:textOff="@string/NoSVS"
+                />
+
 
             <ToggleButton
                 android:id="@+id/GST"
@@ -64,7 +69,8 @@
                 android:layout_weight="1"
                 android:checked="true"
                 android:layout_marginRight="5dp"
-                android:text="ToggleButton" />
+                android:textOn="@string/GST"
+                android:textOff="@string/NoGST"/>
         </RadioGroup>
 
     </LinearLayout>
@@ -78,7 +84,7 @@
         />
 
     <EditText
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/Discount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -91,16 +97,16 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/Cash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="@string/Payment_type1" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/PayNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="@string/Payment_type2" />
     </RadioGroup>
 
     <LinearLayout
@@ -108,26 +114,29 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ToggleButton
-            android:id="@+id/toggleButton5"
+        <Button
+            android:id="@+id/split"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginRight="5dp"
-            android:text="@string/Split" />
+            android:text="@string/Split"
+            />
 
-        <ToggleButton
-            android:id="@+id/toggleButton6"
+
+        <Button
+            android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginLeft="5dp"
-            android:text="@string/Clear" />
+            android:text="@string/Clear"
+            />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/Bill"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/TotalCost"
@@ -135,7 +144,7 @@
         />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/Pays"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/CostPerPerson"

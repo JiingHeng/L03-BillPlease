@@ -14,4 +14,7 @@
     <string name="DiscountDisplay">How much discount</string>
     <string name="TotalCost">Total Bill:</string>
     <string name="CostPerPerson">Each pays:$</string>
+    <string name="NoGST">No GST</string>
+    <string name="SVS">SVS</string>
+    <string name="NoSplit">No Split</string>
 </resources>
