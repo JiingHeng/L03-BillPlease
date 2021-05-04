@@ -12,8 +12,8 @@ import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ToggleButton NoSVS;
-    ToggleButton GST;
+    ToggleButton noSVS;
+    ToggleButton gst;
     EditText etCost;
     EditText etNumber;
 
@@ -22,22 +22,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        NoSVS = findViewById(R.id.SVS);
-        GST = findViewById(R.id.GST);
+        noSVS = findViewById(R.id.SVS);
+        gst = findViewById(R.id.GST);
         etCost = findViewById(R.id.etCost);
         etNumber = findViewById(R.id.etNumber);
 
 
 
-        NoSVS.setOnClickListener(new View.OnClickListener() {
+        noSVS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(NoSVS.isChecked() == true) {
-                    GST.setEnabled(false);
-                    GST.setBackgroundColor(Color.GRAY);
-                } else if(GST.isChecked() == true) {
-                    NoSVS.setEnabled(false);
-                    NoSVS.setBackgroundColor(Color.GRAY);
+                if(noSVS.isChecked() == true) {
+                    gst.setEnabled(false);
+                    gst.setBackgroundColor(Color.GRAY);
+                } else if(gst.isChecked() == true) {
+                    noSVS.setEnabled(false);
+                    noSVS.setBackgroundColor(Color.GRAY);
                 } else {
                     Toast.makeText(MainActivity.this,
                             "Check on of the buttons",
